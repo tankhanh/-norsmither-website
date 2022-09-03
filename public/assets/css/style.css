@@ -393,7 +393,7 @@ html {
     text-decoration: none;
 }
 #footer .social-list a:hover{
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.5);
 }
 .ti-facebook{
     font-size: 40px;
