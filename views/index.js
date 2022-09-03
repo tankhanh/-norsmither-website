@@ -6,6 +6,9 @@ const clickHome = document.querySelector(".js-home");
 const clickIntroduce = document.querySelector(".js-introduce");
 const clickProduct = document.querySelector(".js-product");
 const clickContact = document.querySelector(".js-contact");
+const clickVideo = document.querySelector(".js-video");
+const clickTrack = document.querySelector(".js-track");
+const clickSocial = document.querySelector(".js-social");
 
 const notiSuccess = document.querySelector(".haha");
 // const notiFail = document.querySelector(".noti-fail");
@@ -69,18 +72,34 @@ function closeMenuHome() {
   clickMenu.innerHTML = "MENU";
 }
 clickHome.addEventListener("click", closeMenuHome);
-//click Product
+
+//click Video
 function closeMenuHome() {
   openFormMenu.classList.remove("js-open-menu");
   clickMenu.innerHTML = "MENU";
 }
-clickProduct.addEventListener("click", closeMenuHome);
+clickVideo.addEventListener("click", closeMenuHome);
+
+//click Video
+function closeMenuHome() {
+  openFormMenu.classList.remove("js-open-menu");
+  clickMenu.innerHTML = "MENU";
+}
+clickTrack.addEventListener("click", closeMenuHome);
+
 //click Contact
 function closeMenuHome() {
   openFormMenu.classList.remove("js-open-menu");
   clickMenu.innerHTML = "MENU";
 }
 clickContact.addEventListener("click", closeMenuHome);
+
+//click Social
+function closeMenuHome() {
+  openFormMenu.classList.remove("js-open-menu");
+  clickMenu.innerHTML = "MENU";
+}
+clickSocial.addEventListener("click", closeMenuHome);
 
 function colorMenu() {
   const scrolled = window.scrollY;
