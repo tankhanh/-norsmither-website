@@ -103,9 +103,9 @@ clickSocial.addEventListener("click", closeMenuHome);
 
 function colorMenu() {
   const scrolled = window.scrollY;
-  if (scrolled > 660) {
+  if (scrolled > 410) {
     changeColorMenu.style.color = "black";
-  } else if (scrolled < 660) {
+  } else if (scrolled < 410) {
     changeColorMenu.style.color = "white";
   }
 }
