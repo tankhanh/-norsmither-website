@@ -16,6 +16,24 @@
         height: auto;
         display: block;
     }
+    .language{
+        position: absolute;
+        top: 28px;
+        right: 35px;
+        cursor: pointer;
+        margin-left: 15px;
+        font-size: 32px;
+    }
+    .language .ENG{
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+    }
+    .language .VN{
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+    }
     
     .menu>.title-menu {
         position: fixed;
@@ -433,6 +451,24 @@
         max-width: 100%;
         max-height: 100%;
         display: block;
+    }
+    .language{
+        position: absolute;
+        top: 28px;
+        right: 35px;
+        cursor: pointer;
+        margin-left: 15px;
+        font-size: 32px;
+    }
+    .language .ENG{
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+    }
+    .language .VN{
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
     }
     
     .menu>.title-menu {
@@ -857,7 +893,24 @@
         max-height: 100%;
         display: block;
     }
-    
+    .language{
+        position: absolute;
+        top: 28px;
+        right: 35px;
+        cursor: pointer;
+        margin-left: 15px;
+        font-size: 10px;
+    }
+    .language .ENG{
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+    }
+    .language .VN{
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+    }
     .menu>.title-menu {
         top: 0;
         position: absolute;
