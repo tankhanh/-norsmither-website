@@ -127,12 +127,17 @@ function sendEmail() {
     params.firstName === "" ||
     params.lastName === "" ||
     params.email === "" ||
-    params.message === "" ||
-    !em.test(params.email)
+    params.message === ""
     // !na.test(params.firstName) ||
     // !na.test(params.lastName)
   ) {
-    alert("Không để trống");
+    alert(
+      "Please fill out the information completely (Vui lòng điền đầy đủ thông tin)"
+    );
+  } else if (!em.test(params.email)) {
+    alert(
+      "Please enter the correct email format (Vui lòng nhập đúng định dạng email)"
+    );
   } else {
     const serviceID = "service_bfvjfm3";
     const templateID = "template_rg4h39s";
@@ -144,7 +149,7 @@ function sendEmail() {
           (document.getElementById("email").value = ""),
           (document.getElementById("message").value = "");
         console.log(res);
-        alert("Your message sent successfully!");
+        alert("Your message sent successfully! (Gửi thành công!)");
       })
       .catch((err) => console.log(err));
   }
