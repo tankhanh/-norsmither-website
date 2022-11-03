@@ -16,22 +16,22 @@ const notiFail = document.querySelector(".hihi");
 const hideSuccess = document.querySelector("#successfully");
 const hideFail = document.querySelector("#fail");
 
-const submitSend = document.querySelector(".submit-send");
-const formEmail = document.querySelector("#form").innerHTML;
+// const submitSend = document.querySelector(".submit-send");
+// const formEmail = document.querySelector("#form").innerHTML;
 const loadPage = document.querySelector(".onload");
 //Thông báo
-function openNoti() {
-  if (formEmail === !null) {
-    notiSuccess.classList.add("js-open-success");
-    // set thời gian ẩn thông báo thành công
-    setTimeout(() => {
-      hideSuccess.style.animation = `hideNotification ease 1.5s forwards`;
-    }, 1000);
-    setTimeout(() => {
-      notiSuccess.classList.remove("js-open-success");
-    }, 1000 + 1000);
-  }
-}
+// function openNoti() {
+//   if (formEmail === !null) {
+//     notiSuccess.classList.add("js-open-success");
+//     // set thời gian ẩn thông báo thành công
+//     setTimeout(() => {
+//       hideSuccess.style.animation = `hideNotification ease 1.5s forwards`;
+//     }, 1000);
+//     setTimeout(() => {
+//       notiSuccess.classList.remove("js-open-success");
+//     }, 1000 + 1000);
+//   }
+// }
 // // set thời gian ẩn thông báo lỗi
 // setTimeout(() => {
 //   notiFail.classList.add("js-open-fail");
@@ -41,7 +41,7 @@ function openNoti() {
 //   notiFail.classList.remove("js-open-fail");
 //   // hideFail.style.animation = `hideNotification ease 1.5s forwards`;
 // }, 3000 + 3000);
-submitSend.addEventListener("click", openNoti);
+// submitSend.addEventListener("click", openNoti);
 // click menu
 function openMenu() {
   openFormMenu.classList.add("js-open-menu");
@@ -110,3 +110,42 @@ function colorMenu() {
   }
 }
 window.addEventListener("scroll", colorMenu);
+
+// ======================================================================================================
+function sendEmail() {
+  var params = {
+    firstName: document.getElementById("firstName").value,
+    lastName: document.getElementById("lastName").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+  const em =
+    /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+  const na =
+    /^[a-zA-Z_ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ]+$/;
+  if (
+    params.firstName === "" ||
+    params.lastName === "" ||
+    params.email === "" ||
+    params.message === "" ||
+    !em.test(params.email) ||
+    !na.test(params.firstName) ||
+    !na.test(params.lastName)
+  ) {
+    alert("Không để trống");
+  } else {
+    const serviceID = "service_bfvjfm3";
+    const templateID = "template_rg4h39s";
+    emailjs
+      .send(serviceID, templateID, params)
+      .then((res) => {
+        (document.getElementById("firstName").value = ""),
+          (document.getElementById("lastName").value = ""),
+          (document.getElementById("email").value = ""),
+          (document.getElementById("message").value = "");
+        console.log(res);
+        alert("Your message sent successfully!");
+      })
+      .catch((err) => console.log(err));
+  }
+}

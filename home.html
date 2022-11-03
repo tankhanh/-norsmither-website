@@ -94,24 +94,22 @@
                         <p><i class="ti-mobile"></i>+84 908 779 245</p>
                         <p><i class="ti-email"></i>dinhtankhanh14@gmail.com</p>
                     </div>
-                    <div class="input form-email">
-                        <form action="https://formsubmit.co/daa32bbe702a3c8a2971c431ed8e187b" method="POST">
-                            <div class="input-name">
-                                <input type="text" name="name" placeholder="Name" required id="form" class="form-control">
-                            </div>
-                            <div class="input-phone">
-                                <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Phone" required id="form" class="form-control">
-                            </div>
-                            <div class="input-email">
-                                <input type="email" name="email" placeholder="Email" required id="form" class="form-control">
-                            </div>
-                            <div class="input-message">
-                                <!-- <textarea name="" placeholder="Message" required id="" cols="30" rows="30" class="form-control"></textarea> -->
-                                <input type="text" name="message" placeholder="Message" id="form" class="form-control">
-                            </div>
-                            <input class="submit-send" type="submit" value="SEND">
-                            <input class="onload" type="hidden" name="_next" value="https://tankhanh.github.io/norsmither/thankyou">
-                        </form>
+                            <div class="input form-email">
+                                <div class="input-firstName">
+                                    <input type="text" name="firstName" placeholder="First Name" id="firstName" class="form-control">
+                                </div>
+                                <div class="input-lastName">
+                                    <input type="text" name="lastName" placeholder="Last Name" id="lastName" class="form-control">
+                                </div>
+                                <div class="input-email">
+                                    <input type="email" name="email" placeholder="Email" id="email" class="form-control">
+                                </div>
+                                <div class="input-message">
+                                    <!-- <textarea name="" placeholder="Message" required id="" cols="30" rows="30" class="form-control"></textarea> -->
+                                    <input type="text" name="message" placeholder="Message" id="message" class="form-control">
+                                </div>
+                                <!-- <input class="submit-send" type="submit" onclick="sendEmail()" required value="SEND"> -->
+                                <button class="submit-send" onclick="sendEmail()">SEND</button>
                     </div>
                 </div>
             </div>
@@ -132,4 +130,12 @@
     </div>
 </body>
 <script src="./index.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("0YfluSEarlTb2UM1e");
+   })();
+</script>
 </html>

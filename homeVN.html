@@ -105,24 +105,21 @@
                         <p><i class="ti-email"></i>dinhtankhanh14@gmail.com</p>
                     </div>
                     <div class="input form-email">
-                        <form action="https://formsubmit.co/daa32bbe702a3c8a2971c431ed8e187b" method="POST">
-                            <div class="input-name">
-                                <input type="text" name="name" placeholder="Họ tên" required id="form" class="form-control">
-                            </div>
-                            <div class="input-phone">
-                                <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Số điện thoại" required id="form" class="form-control">
-                            </div>
-                            <div class="input-email">
-                                <input type="email" name="email" placeholder="Email" required id="form" class="form-control">
-                            </div>
-                            <div class="input-message">
-                                <!-- <textarea name="" placeholder="Message" required id="" cols="30" rows="30" class="form-control"></textarea> -->
-                                <input type="text" name="message" placeholder="Lời nhắn" id="form" class="form-control">
-                            </div>
-                            <input class="submit-send" type="submit" value="Gửi đi">
-                            <input class="onload" type="hidden" name="_next" value="https://tankhanh.github.io/norsmither/thankyouVN">
-                        </form>
-                    </div>
+                        <div class="input-firstName">
+                            <input type="text" name="firstName" placeholder="Tên" id="firstName" class="form-control">
+                        </div>
+                        <div class="input-lastName">
+                            <input type="text" name="lastName" placeholder="Họ" id="lastName" class="form-control">
+                        </div>
+                        <div class="input-email">
+                            <input type="email" name="email" placeholder="Email" id="email" class="form-control">
+                        </div>
+                        <div class="input-message">
+                            <!-- <textarea name="" placeholder="Message" required id="" cols="30" rows="30" class="form-control"></textarea> -->
+                            <input type="text" name="message" placeholder="Lời nhắn" id="message" class="form-control">
+                        </div>
+                        <!-- <input class="submit-send" type="submit" onclick="sendEmail()" required value="SEND"> -->
+                        <button class="submit-send" onclick="sendEmail()">Gửi đi</button>
                 </div>
             </div>
         </div>
@@ -142,4 +139,12 @@
     </div>
 </body>
 <script src="./index.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("0YfluSEarlTb2UM1e");
+   })();
+</script>
 </html>
