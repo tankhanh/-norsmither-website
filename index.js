@@ -128,9 +128,9 @@ function sendEmail() {
     params.lastName === "" ||
     params.email === "" ||
     params.message === "" ||
-    !em.test(params.email) ||
-    !na.test(params.firstName) ||
-    !na.test(params.lastName)
+    !em.test(params.email)
+    // !na.test(params.firstName) ||
+    // !na.test(params.lastName)
   ) {
     alert("Không để trống");
   } else {
