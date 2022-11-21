@@ -64,10 +64,10 @@
                 <h2 class="section-heading">INTRODUCE</h2>
                 <p class="section-sub-heading">Norsmither</p>
                 <p class="introduce-content">
-                    Hi everyone, I'm Norsmither. The purpose of creating this website is to introduce myself as well as introduce music-related activities that I will launch in the near future: product launch time, promotion, system list the latest great songs, post the latest demos, etc. and much more coming in the future. Coming soon!
-                    <br>Let me introduce a little about myself, my real name is Dinh Tan Khanh, born in 2000, HCM city, Viet Nam. I graduated from Van Lang University, majoring in Software Engineering. In addition to being a programming engineer, I also have a passion for music. I can sing, compose and produce music. Through my work as a software developer, I created my own website to present my dream. I want to show people what I can do with music as well as software programming. I thought it was a good idea and now it's come true.
-                    <br>Since this is my first time developing my own project, everything will be constantly updated to become more complete. Hope this website will be enjoyed by everyone and give many comments to improve it in the future.
-                    <br>In conclusion, thank you very much for visiting this site. Please contact me if you have some ideas about music or software programming work.
+                    Hello everyone, I'm Norsmither. This website is to introduce myself as well as to introduce music-related activities that I will launch in the near future.
+                    <br>Before talking about the reason for creating this website, I would like to introduce a little about myself, my real name is Dinh Tan Khanh, born in 2000, Ho Chi Minh City, Vietnam. I graduated from Van Lang University, majoring in Software Engineering. In addition to being a programming engineer, I also have a passion for music and especially being able to sing, compose and produce music. Through my work as a software developer, I want to show people what I can do with music as well as program software. I thought it was a good idea because I was able to combine my two jobs (programming and music) and now it's becoming a reality.
+                    <br>Since this is the first time developing the project, everything will be constantly updated to make my website more and more perfect. Hope this site will be liked by everyone and give me lots of constructive feedback!
+                    <br>In conclusion, thank you all very much for visiting my website. If you have any cool ideas about music or website development, don't hesitate to contact me via inbox (Below). Thank you very much!
                 </p>
             </div>
             <!-- Sản phẩm -->
@@ -109,7 +109,7 @@
                                     <input type="text" name="message" placeholder="Message" id="message" class="form-control">
                                 </div>
                                 <!-- <input class="submit-send" type="submit" onclick="sendEmail()" required value="SEND"> -->
-                                <button class="submit-send" onclick="sendEmail()">SEND</button>
+                                <button id="btn" class="submit-send" onclick="sendEmail()">SEND</button>
                     </div>
                 </div>
             </div>
@@ -135,7 +135,58 @@
 </script>
 <script type="text/javascript">
    (function(){
-      emailjs.init("0YfluSEarlTb2UM1e");
+      emailjs.init("9CbU7UxqSWDfxFTwo");
    })();
 </script>
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+        function Mail(){
+            const em =
+            /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        let firstName = document.getElementById("firstName").value;
+        let lastName = document.getElementById("lastName").value;
+        var email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
+        let body = 'name: ' + firstName + '' + lastName 
+        + '<br/> email: ' + email + '<br/> message: ' + message;
+
+    if(firstName === "" ||
+        lastName === "" ||
+        email === "" ||
+        message === ""){
+        alert(
+      "Please fill out the information completely (Vui lòng điền đầy đủ thông tin)"
+    );
+
+    } else if (!em.test(email)){
+        alert(
+      "Please enter the correct email format (Vui lòng nhập đúng định dạng email)"
+    );
+
+    } else {
+    //     Email.send({
+    //     SecureToken : "88a73c7f-5f09-421e-842c-22c36d233b79",
+    //     To : 'dinhtankhanh14@gmail.com',
+    //     From : email,
+    //     Subject : `A new message from ${firstName} ${lastName}`,
+    //     Body : body
+    // }).then ((res) => {
+    //     console.log(res);
+    //     alert("Your message sent successfully! (Gửi thành công!)");
+    // }).catch((err) => console.log(err));
+    Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "dinhtankhanh32@gmail.com",
+    Password : "A98FCB2F88A65FF114E82335017BD352EB3D",
+    To : 'dinhtankhanh32@gmail.com',
+    From : email,
+    Subject : `A new message from ${firstName} ${lastName}`,
+    Body : body
+}).then ((res) => {
+        console.log(res);
+        alert("Your message sent successfully! (Gửi thành công!)");
+    }).catch((err) => console.log(err));
+};
+        }
+</script> -->
 </html>

@@ -121,8 +121,8 @@ function sendEmail() {
   };
   const em =
     /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-  const na =
-    /^[a-zA-Z_ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ]+$/;
+  const firstAndlastName =
+    /^[a-zA-Z_ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s]{1,25}$/;
   if (
     params.firstName === "" ||
     params.lastName === "" ||
@@ -138,9 +138,16 @@ function sendEmail() {
     alert(
       "Please enter the correct email format (Vui lòng nhập đúng định dạng email)"
     );
+  } else if (
+    !firstAndlastName.test(params.firstName) ||
+    !firstAndlastName.test(params.lastName)
+  ) {
+    alert(
+      "Only alphabetic characters between 3 and 15 characters in length are allowed (Chỉ cho phép các ký tự chữ cái có độ dài từ 3 đến 15 ký tự)"
+    );
   } else {
-    const serviceID = "service_bfvjfm3";
-    const templateID = "template_rg4h39s";
+    const serviceID = "service_hmdstv7";
+    const templateID = "template_fa8mpsd";
     emailjs
       .send(serviceID, templateID, params)
       .then((res) => {
@@ -154,3 +161,5 @@ function sendEmail() {
       .catch((err) => console.log(err));
   }
 }
+
+// =======================================================================================================================
