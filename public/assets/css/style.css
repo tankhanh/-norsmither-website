@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 /*=======================================PC===================================================== */
-@media (min-width : 1024px){
+@media only screen and (min-width : 1024px){
     html {
         font-family: Arial, Helvetica, sans-serif;
         scroll-behavior: smooth;
@@ -441,7 +441,7 @@
 
 /* =======================================TABLET===================================================== */
 
-@media (min-width: 740px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     html {
         font-family: Arial, Helvetica, sans-serif;
         scroll-behavior: smooth;
@@ -882,7 +882,7 @@
     }
 }
 /*=======================================MOBILE===================================================== */
-@media (max-width: 740px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
     html {
         font-family: Arial, Helvetica, sans-serif;
         scroll-behavior: smooth;
@@ -1040,7 +1040,7 @@
     
     #content .introduce-content {
         text-align: justify;
-        font-size: 15px;
+        font-size: 10px;
         line-height: 2;
         margin: 30px 10px;
     }
@@ -1080,8 +1080,9 @@
     .audio-content {
         float: right;
         display: block;
-        margin-right: 35px;
+        margin-right: 55px;
         margin-bottom: 70px;
+        width: 200px;
     }
     
     #content .desc-track {
@@ -1130,12 +1131,12 @@
     }
     
     .form-email {
-        margin: 18px 24px 100px 25px;
-        font-size: 15px;
+        margin: 18px 24px 100px 40px;
+        font-size: 5px;
     }
     
     .info {
-        margin: 20px 20px 20px 74px;
+        margin: 20px 20px 20px 40px;
         line-height: 1.4;
     }
     .info i[class*="ti-"]{
@@ -1144,7 +1145,6 @@
     }
     .form-email .form-control{
         padding: 11px;
-        width: 332px;
         height: 50px;
         border-top: none;
         border-left: none;
@@ -1158,16 +1158,16 @@
         background-color: rgba(223, 220, 220, 0.4)
     }
     .input-name{
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .input-lastName{
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .input-email{
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .input-message{
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .submit-send{
         float: right;
@@ -1175,7 +1175,7 @@
         font-size: 15px;
         background-color: white;
         color: black;
-        padding: 8px 143px;
+        padding: 8px 70px;
         border-radius: 18px;
     }
     .submit-send:hover{
@@ -1292,15 +1292,15 @@
         color: rgba(0, 0, 0, 0.5);
     }
     .ti-soundcloud{
-        font-size: 40px;
+        font-size: 30px;
         margin: 30px;
     }
     .ti-instagram{
-        font-size: 40px;
+        font-size: 30px;
         margin: 30px;
     }
     .ti-youtube{
-        font-size: 40px;
+        font-size: 30px;
         margin: 30px;
     }
     .copy{
@@ -1314,8 +1314,8 @@
     text-align: center;
     }
     .video-content{
-        width: 300px;
-        height: 200px;
-        margin-left: 40px;
+        width: 250px;
+        height: 150px;
+        margin-left: 20px;
     }
 }
