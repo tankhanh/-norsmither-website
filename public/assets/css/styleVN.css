@@ -1367,7 +1367,7 @@
         font-size: 20px;
         padding: 16px;
         display: inline-flex;
-        margin: 15px 28px;
+        margin: 15px 0px;
     }
     #social .social-list a{
         color: rgba(0, 0, 0, 0.6);
@@ -1378,17 +1378,17 @@
     }
     .fa-soundcloud{
         font-size: 30px;
-        margin: 30px;
+        margin: 20px;
         color: white;
     }
     .fa-instagram{
         font-size: 30px;
-        margin: 30px;
+        margin: 20px;
         color: white;
     }
     .fa-youtube{
         font-size: 30px;
-        margin: 30px;
+        margin: 20px;
         color: white;
     }
     .copy{
