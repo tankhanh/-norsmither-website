@@ -1314,12 +1314,15 @@
         font-size: 30px;
         font-weight: 500;
         letter-spacing: 12px;
-        margin-left: 14px;
+        margin-left: 40px;
+        color: black;
+        display: inline-block;
     }
     #social .social-list {
         font-size: 20px;
-        padding: 32px 16px 16px 16px;
-        text-align: center;
+        padding: 16px;
+        display: inline-flex;
+        margin: 15px 10px;
     }
     #social .social-list a{
         color: rgba(0, 0, 0, 0.6);
@@ -1330,17 +1333,17 @@
     }
     .fa-soundcloud{
         font-size: 30px;
-        margin: 30px;
+        margin: 20px;
         color: black;
     }
     .fa-instagram{
         font-size: 30px;
-        margin: 30px;
+        margin: 20px;
         color: black;
     }
     .fa-youtube{
         font-size: 30px;
-        margin: 30px;
+        margin: 20px;
         color: black;
     }
     .copy{
