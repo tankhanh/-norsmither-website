@@ -164,6 +164,7 @@
         font-size: 15px;
         line-height: 2;
         margin: 30px 10px;
+        font-style: italic;
     }
     
     /* CONTENT-PRODUCT */
@@ -188,6 +189,7 @@
         font-size: 30px;
         font-weight: 500;
         letter-spacing: 4px;
+        font-style: italic;
     }
     
     #content .section-product-audio {
@@ -196,6 +198,7 @@
         font-size: 30px;
         font-weight: 500;
         letter-spacing: 4px;
+        font-style: italic;
     }
     
     .audio-content {
@@ -415,17 +418,20 @@
     #social .social-list a:hover{
         color: rgba(0, 0, 0, 0.5);
     }
-    .ti-soundcloud{
+    .fa-soundcloud{
         font-size: 40px;
         margin: 30px;
+        color: black;
     }
-    .ti-instagram{
+    .fa-instagram{
         font-size: 40px;
         margin: 30px;
+        color: black;
     }
-    .ti-youtube{
+    .fa-youtube{
         font-size: 40px;
         margin: 30px;
+        color: black;
     }
     .copy{
         float: left;
@@ -436,6 +442,18 @@
         font-weight: 400;
         font-size: 13px;
         text-align: center;
+    }
+    .soundcloud{
+        text-decoration: none;
+        color: black;
+        font-style: italic;
+        font-weight: bold;
+    }
+    .youtube{
+        text-decoration: none;
+        color: black;
+        font-style: italic;
+        font-weight: bold;
     }
 }
 
@@ -626,6 +644,7 @@
         font-size: 30px;
         font-weight: 500;
         letter-spacing: 4px;
+        font-style: italic;
     }
     
     #content .section-product-audio {
@@ -634,6 +653,7 @@
         font-size: 30px;
         font-weight: 500;
         letter-spacing: 4px;
+        font-style: italic;
     }
     
     .audio-content {
@@ -853,17 +873,20 @@
     #social .social-list a:hover{
         color: rgba(0, 0, 0, 0.5);
     }
-    .ti-soundcloud{
+    .fa-soundcloud{
         font-size: 40px;
         margin: 30px;
+        color: black;
     }
-    .ti-instagram{
+    .fa-instagram{
         font-size: 40px;
         margin: 30px;
+        color: black;
     }
-    .ti-youtube{
+    .fa-youtube{
         font-size: 40px;
         margin: 30px;
+        color: black;
     }
     .copy{
         float: left;
@@ -879,6 +902,18 @@
         width: 600px;
         height: 400px;
         margin-left: 80px;
+    }
+    .soundcloud{
+        text-decoration: none;
+        color: black;
+        font-style: italic;
+        font-weight: bold;
+    }
+    .youtube{
+        text-decoration: none;
+        color: black;
+        font-style: italic;
+        font-weight: bold;
     }
 }
 /*=======================================MOBILE===================================================== */
@@ -1067,6 +1102,7 @@
         font-size: 30px;
         font-weight: 500;
         letter-spacing: 4px;
+        font-style: italic;
     }
     
     #content .section-product-audio {
@@ -1075,6 +1111,7 @@
         font-size: 30px;
         font-weight: 500;
         letter-spacing: 4px;
+        font-style: italic;
     }
     
     .audio-content {
@@ -1291,17 +1328,20 @@
     #social .social-list a:hover{
         color: rgba(0, 0, 0, 0.5);
     }
-    .ti-soundcloud{
+    .fa-soundcloud{
         font-size: 30px;
         margin: 30px;
+        color: black;
     }
-    .ti-instagram{
+    .fa-instagram{
         font-size: 30px;
         margin: 30px;
+        color: black;
     }
-    .ti-youtube{
+    .fa-youtube{
         font-size: 30px;
         margin: 30px;
+        color: black;
     }
     .copy{
         float: left;
@@ -1317,5 +1357,17 @@
         width: 250px;
         height: 150px;
         margin-left: 20px;
+    }
+    .soundcloud{
+        text-decoration: none;
+        color: black;
+        font-style: italic;
+        font-weight: bold;
+    }
+    .youtube{
+        text-decoration: none;
+        color: black;
+        font-style: italic;
+        font-weight: bold;
     }
 }
