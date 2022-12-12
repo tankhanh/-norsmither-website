@@ -11,10 +11,40 @@
         scroll-behavior: smooth;
     }
     
-    .slider {
+    /* .slider {
         max-width: 100%;
         height: auto;
         display: block;
+    } */
+    #header .header-section {
+        width: 762px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 32px 0;
+        height: 590px;
+    }
+    .name-title{
+        text-decoration: none;
+        color: black;
+        font-size: 60px;
+    }
+    .header-title{
+        text-align: center;
+        padding: 30px;
+        font-family: cursive;
+    }
+    .wrapper{
+        /* padding: 10px;
+        display: inline;
+        margin: 30px;
+        display: block;
+        position: absolute;
+        left: 430px; */
+    }
+    .pic{
+        width: 350px;
+        height: 350px;
+        margin: 0 212px;
     }
     .language{
         position: absolute;
@@ -26,24 +56,23 @@
     }
     .language .ENG{
         text-decoration: none;
-        color: white;
+        color: black;
         font-weight: 700;
     }
     .language .VN{
         text-decoration: none;
-        color: white;
+        color: black;
         font-weight: 700;
     }
     
     .menu>.title-menu {
-        position: fixed;
-        bottom: 550px;
+        position: absolute;
         left: 35px;
-        color: white;
+        color: black;
         cursor: pointer;
         margin-left: 15px;
+        top:30px;
     }
-    
     .form-menu {
         position: fixed;
         top: 0;
@@ -465,7 +494,7 @@
         scroll-behavior: smooth;
     }
     
-    .slider {
+    /* .slider {
         max-width: 100%;
         max-height: 100%;
         display: block;
@@ -498,6 +527,65 @@
         cursor: pointer;
         margin-left: 10px;
         margin-top: 20px;
+    } */
+    /* .slider {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    } */
+    #header .header-section {
+        width: 762px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 32px 0;
+        height: 590px;
+    }
+    .name-title{
+        text-decoration: none;
+        color: black;
+        font-size: 60px;
+    }
+    .header-title{
+        text-align: center;
+        padding: 30px;
+        font-family: cursive;
+    }
+    .wrapper{
+        /* padding: 10px;
+        display: inline;
+        margin: 200px; */
+    }
+    .pic{
+        width: 350px;
+        height: 350px;
+        margin: 0 212px;
+    }
+    .language{
+        position: absolute;
+        top: 28px;
+        right: 35px;
+        cursor: pointer;
+        margin-left: 15px;
+        font-size: 32px;
+    }
+    .language .ENG{
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+    }
+    .language .VN{
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+    }
+    
+    .menu>.title-menu {
+        position: absolute;
+        left: 35px;
+        color: black;
+        cursor: pointer;
+        margin-left: 15px;
+        top:30px;
     }
     
     .form-menu {
@@ -924,7 +1012,7 @@
         scroll-behavior: smooth;
     }
     
-    .slider {
+    /* .slider {
         max-width: 100%;
         max-height: 100%;
         display: block;
@@ -947,6 +1035,67 @@
         color: white;
         font-weight: 700;
     }
+    .menu>.title-menu {
+        top: 0;
+        position: absolute;
+        bottom: 550px;
+        left: 35px;
+        color: white;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-top: 20px;
+        visibility: hidden;
+    } */
+    /* .slider {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    } */
+    #header .header-section {
+        width: 762px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 32px 0;
+        height: 590px;
+    }
+    .name-title{
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+    }
+    .header-title{
+        padding: 40px;
+        font-family: cursive;
+        display: inline-block;
+        margin: 20px 80px 20px 30px;
+    }
+    .wrapper{
+        /* display: block;
+        position: absolute; */
+    }
+    .pic{
+        width: 370px;
+        height: 350px;
+    }
+    .language{
+        position: absolute;
+        top: 28px;
+        right: 35px;
+        cursor: pointer;
+        margin-left: 15px;
+        font-size: 10px;
+    }
+    .language .ENG{
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+    }
+    .language .VN{
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+    }
+    
     .menu>.title-menu {
         top: 0;
         position: absolute;
@@ -1119,7 +1268,7 @@
     .audio-content {
         float: right;
         display: block;
-        margin-right: 55px;
+        margin-right: 80px;
         margin-bottom: 70px;
         width: 200px;
     }
@@ -1170,12 +1319,12 @@
     }
     
     .form-email {
-        margin: 18px 24px 100px 40px;
+        margin: 18px 24px 100px 90px;
         font-size: 5px;
     }
     
     .info {
-        margin: 20px 20px 20px 40px;
+        margin: 20px 20px 20px 70px;
         line-height: 1.4;
     }
     .info i[class*="ti-"]{
@@ -1316,7 +1465,7 @@
         font-size: 30px;
         font-weight: 500;
         letter-spacing: 12px;
-        margin-left: 40px;
+        margin: 0px 80px;
         color: black;
         display: inline-block;
     }
@@ -1324,7 +1473,7 @@
         font-size: 20px;
         padding: 16px;
         display: inline-flex;
-        margin: 15px 10px;
+        margin: 15px 55px;
     }
     #social .social-list a{
         color: rgba(0, 0, 0, 0.6);
@@ -1361,7 +1510,7 @@
     .video-content{
         width: 250px;
         height: 150px;
-        margin-left: 20px;
+        margin-left: 50px;
     }
     .soundcloud{
         text-decoration: none;
