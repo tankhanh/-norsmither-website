@@ -1052,7 +1052,7 @@
         display: block;
     } */
     #header .header-section {
-        width: 762px;
+        width: 358px;
         margin-left: auto;
         margin-right: auto;
         padding: 32px 0;
@@ -1065,17 +1065,18 @@
     }
     .header-title{
         padding: 40px;
-        font-family: cursive;
+        font-family: fantasy;
         display: inline-block;
-        margin: 20px 80px 20px 30px;
+        margin: 20px 63px 20px 63px;
     }
     .wrapper{
         /* display: block;
         position: absolute; */
+        margin: 0px 30px;
     }
     .pic{
-        width: 370px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
     }
     .language{
         position: absolute;
@@ -1237,14 +1238,14 @@
         margin-left: auto;
         margin-right: auto;
         padding: 32px 0;
-        max-height: 100%;
+        height: 400px;
     }
     #content .content-track {
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
         padding: 32px 0;
-        max-height: 100%;
+        height: 500px;
     }
     
     #content .section-product-video {
@@ -1266,10 +1267,8 @@
     }
     
     .audio-content {
-        float: right;
         display: block;
-        margin-right: 80px;
-        margin-bottom: 70px;
+        margin: 0 80px;
         width: 200px;
     }
     
@@ -1299,12 +1298,12 @@
         margin-left: auto;
         margin-right: auto;
         padding: 32px 0;
-        max-height: 100%;
+        height: 590px;
     }
     
     .contact-form {
         max-width: 100%;
-        max-height: 100%;
+        height: 490px;
         margin: 0 auto;
         padding-top: 32px;
         padding-bottom: 32px;
@@ -1319,12 +1318,12 @@
     }
     
     .form-email {
-        margin: 18px 24px 100px 90px;
+        margin: 0px 86px;
         font-size: 5px;
     }
     
     .info {
-        margin: 20px 20px 20px 70px;
+        margin: 35px 62px;
         line-height: 1.4;
     }
     .info i[class*="ti-"]{
@@ -1345,7 +1344,7 @@
     .form-email .form-control:hover{
         background-color: rgba(223, 220, 220, 0.4)
     }
-    .input-name{
+    /* .input-firstName{
         margin-bottom: 5px;
     }
     .input-lastName{
@@ -1356,7 +1355,7 @@
     }
     .input-message{
         margin-bottom: 5px;
-    }
+    } */
     .submit-send{
         float: right;
         margin-top: 30px;
@@ -1456,7 +1455,7 @@
         margin-left: auto;
         margin-right: auto;
         padding: 32px 0;
-        max-height: 100%;
+        height: 238px;
     }
     
     #social .social-heading {
@@ -1464,16 +1463,13 @@
         padding: 16px;
         font-size: 30px;
         font-weight: 500;
-        letter-spacing: 12px;
-        margin: 0px 80px;
+        letter-spacing: 4px;
         color: black;
-        display: inline-block;
     }
     #social .social-list {
-        font-size: 20px;
-        padding: 16px;
+        padding: 30px;
         display: inline-flex;
-        margin: 15px 55px;
+        margin: 0px 41px;
     }
     #social .social-list a{
         color: rgba(0, 0, 0, 0.6);
@@ -1498,10 +1494,9 @@
         color: black;
     }
     .copy{
-        float: left;
     width: 100%;
     height: 100%;
-    padding: 30px 30px 30px 35px;
+    padding: 16px;
     margin-top: -10px;
     font-weight: 400;
     font-size: 13px;
@@ -1510,7 +1505,7 @@
     .video-content{
         width: 250px;
         height: 150px;
-        margin-left: 50px;
+        margin: 0 54px;
     }
     .soundcloud{
         text-decoration: none;
