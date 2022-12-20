@@ -31,7 +31,7 @@
     .header-title{
         text-align: center;
         padding: 30px;
-        font-family: cursive;
+        /* font-family: cursive; */
     }
     .wrapper{
         /* padding: 10px;
@@ -40,11 +40,16 @@
         display: block;
         position: absolute;
         left: 430px; */
+        width: 762px;
+        height: 350px;
+        text-align: center;
+        padding: 37px;
     }
     .pic{
-        width: 350px;
-        height: 350px;
-        margin: 0 212px;
+        /* width: 350px;
+        height: 350px; */
+        height: 275px;
+        /* margin: 0 212px; */
     }
     .language{
         position: absolute;
@@ -548,17 +553,22 @@
     .header-title{
         text-align: center;
         padding: 30px;
-        font-family: cursive;
+        /* font-family: cursive; */
     }
     .wrapper{
         /* padding: 10px;
         display: inline;
         margin: 200px; */
+        width: 762px;
+        height: 350px;
+        text-align: center;
+        padding: 37px;
     }
     .pic{
-        width: 350px;
+        /* width: 350px;
         height: 350px;
-        margin: 0 212px;
+        margin: 0 212px; */
+        height: 275px;
     }
     .language{
         position: absolute;
@@ -1064,19 +1074,24 @@
         font-size: 30px;
     }
     .header-title{
-        padding: 40px;
-        font-family: fantasy;
+        padding: 36px;
+        /* font-family: fantasy; */
         display: inline-block;
-        margin: 20px 63px 20px 63px;
+        margin: 20px 15px 20px 16px;
     }
     .wrapper{
         /* display: block;
         position: absolute; */
-        margin: 0px 30px;
+        /* margin: 0px 30px; */
+        width: 304px;
+        height: 297px;
+        text-align: center;
+        padding: 10px;
     }
     .pic{
-        width: 300px;
-        height: 300px;
+        /* width: 250px; */
+        /* height: 300px; */
+        height: 275px;
     }
     .language{
         position: absolute;
@@ -1265,10 +1280,13 @@
         letter-spacing: 4px;
         font-style: italic;
     }
-    
+    .co-audio{
+        text-align: center;
+        padding: 17px;
+    }
     .audio-content {
-        display: block;
-        margin: 0 80px;
+        /* display: block;
+        margin: 0 80px; */
         width: 200px;
     }
     
@@ -1284,13 +1302,14 @@
     #contact {}
     
     #contact .info {
-        float: left;
-        display: inline-block;
+        /* float: left;
+        display: inline-block; */
+        text-align: center;
     }
     
     #contact .form-email {
-        float: left;
-        display: inline;
+        /* float: left;
+        display: inline; */
     }
     
     #contact .contact-section {
@@ -1318,12 +1337,14 @@
     }
     
     .form-email {
-        margin: 0px 86px;
+        /* margin: 0px 86px; */
         font-size: 5px;
+        text-align: center;
     }
     
     .info {
-        margin: 35px 62px;
+        margin: 15px;
+        padding: 20px;
         line-height: 1.4;
     }
     .info i[class*="ti-"]{
@@ -1357,7 +1378,6 @@
         margin-bottom: 5px;
     } */
     .submit-send{
-        float: right;
         margin-top: 30px;
         font-size: 15px;
         background-color: white;
@@ -1467,9 +1487,11 @@
         color: black;
     }
     #social .social-list {
-        padding: 30px;
+        /* padding: 30px;
         display: inline-flex;
-        margin: 0px 41px;
+        margin: 0px 41px; */
+        text-align: center;
+        padding: 10px;
     }
     #social .social-list a{
         color: rgba(0, 0, 0, 0.6);
@@ -1496,16 +1518,19 @@
     .copy{
     width: 100%;
     height: 100%;
-    padding: 16px;
-    margin-top: -10px;
+    padding: 10px;
     font-weight: 400;
     font-size: 13px;
     text-align: center;
     }
+    .co-video{
+    text-align: center;
+    padding: 22px;
+    }
     .video-content{
         width: 250px;
-        height: 150px;
-        margin: 0 54px;
+        height: 170px;
+        /* margin: 0 54px; */
     }
     .soundcloud{
         text-decoration: none;

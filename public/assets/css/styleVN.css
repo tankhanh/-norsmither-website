@@ -31,7 +31,7 @@
     .header-title{
         text-align: center;
         padding: 30px;
-        font-family: cursive;
+        /* font-family: cursive; */
     }
     .wrapper{
         /* padding: 10px;
@@ -40,11 +40,16 @@
         display: block;
         position: absolute;
         left: 430px; */
+        width: 762px;
+        height: 350px;
+        text-align: center;
+        padding: 37px;
     }
     .pic{
-        width: 350px;
-        height: 350px;
-        margin: 0 212px;
+        /* width: 350px;
+        height: 350px; */
+        height: 275px;
+        /* margin: 0 212px; */
     }
     .language{
         position: absolute;
@@ -494,10 +499,76 @@
         scroll-behavior: smooth;
     }
     
-    .slider {
+    /* .slider {
         max-width: 100%;
         max-height: 100%;
         display: block;
+    }
+    .language{
+        position: absolute;
+        top: 28px;
+        right: 35px;
+        cursor: pointer;
+        margin-left: 15px;
+        font-size: 32px;
+    }
+    .language .ENG{
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+    }
+    .language .VN{
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+    }
+    
+    .menu>.title-menu {
+        top: 0;
+        position: absolute;
+        bottom: 550px;
+        left: 35px;
+        color: white;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-top: 20px;
+    } */
+    /* .slider {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    } */
+    #header .header-section {
+        width: 762px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 32px 0;
+        height: 590px;
+    }
+    .name-title{
+        text-decoration: none;
+        color: black;
+        font-size: 60px;
+    }
+    .header-title{
+        text-align: center;
+        padding: 30px;
+        /* font-family: cursive; */
+    }
+    .wrapper{
+        /* padding: 10px;
+        display: inline;
+        margin: 200px; */
+        width: 762px;
+        height: 350px;
+        text-align: center;
+        padding: 37px;
+    }
+    .pic{
+        /* width: 350px;
+        height: 350px;
+        margin: 0 212px; */
+        height: 275px;
     }
     .language{
         position: absolute;
@@ -519,14 +590,12 @@
     }
     
     .menu>.title-menu {
-        top: 0;
         position: absolute;
-        bottom: 550px;
         left: 35px;
         color: black;
         cursor: pointer;
-        margin-left: 10px;
-        margin-top: 20px;
+        margin-left: 15px;
+        top:30px;
     }
     
     .form-menu {
@@ -535,7 +604,7 @@
         right: 0;
         left: 0;
         bottom: 0;
-        background: white(0, 0, 0, 0.4);
+        background: rgba(0, 0, 0, 0.4);
         display: none;
     }
     
@@ -617,9 +686,7 @@
         margin-bottom: 10px;
     }
     
-    #content {
-        background-color: black;
-    }
+    #content {}
     
     /* CONTENT-SECTION */
     #content .content-section {
@@ -636,7 +703,6 @@
         font-size: 30px;
         font-weight: 500;
         letter-spacing: 4px;
-        color: white;
     }
     
     #content .section-sub-heading {
@@ -645,7 +711,6 @@
         font-size: 20px;
         opacity: 0.6;
         font-style: italic;
-        color: white;
     }
     
     #content .introduce-content {
@@ -654,7 +719,6 @@
         line-height: 2;
         margin: 30px 10px;
         font-style: italic;
-        color: white;
     }
     
     /* CONTENT-PRODUCT */
@@ -680,7 +744,6 @@
         font-weight: 500;
         letter-spacing: 4px;
         font-style: italic;
-        color: white;
     }
     
     #content .section-product-audio {
@@ -690,7 +753,6 @@
         font-weight: 500;
         letter-spacing: 4px;
         font-style: italic;
-        color: white;
     }
     
     .audio-content {
@@ -701,7 +763,7 @@
     
     #content .desc-track {
         /* text-decoration: none; */
-        color: white;
+        color: black;
         text-transform: uppercase;
         font-size: 15px;
         display: inline-block;
@@ -710,9 +772,7 @@
     }
     
     /* CONTACT */
-    #contact {
-        background-color: black;
-    }
+    #contact {}
     
     #contact .info {
         float: left;
@@ -738,7 +798,6 @@
         margin: 0 auto;
         padding-top: 32px;
         padding-bottom: 32px;
-        color: white;
     }
     
     #contact .contact-heading {
@@ -747,7 +806,6 @@
         font-size: 30px;
         font-weight: 500;
         letter-spacing: 4px;
-        color: white;
     }
     
     .form-email {
@@ -775,12 +833,10 @@
         border-bottom: ridge;
         outline: 0;
         resize: vertical;
-        border-radius: 10px;
-        background-color: black;
     
     }
     .form-email .form-control:hover{
-        background-color: rgba(0, 0, 0, 0.4)
+        background-color: rgba(223, 220, 220, 0.4)
     }
     .input-name{
         margin-bottom: 10px;
@@ -798,14 +854,14 @@
         float: right;
         margin-top: 30px;
         font-size: 15px;
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
         padding: 8px 143px;
         border-radius: 18px;
     }
     .submit-send:hover{
-        background-color: white;
-        color: black;
+        background-color: black;
+        color: white;
     }
     
     /* NOTIFICATION */
@@ -889,11 +945,11 @@
         }
     }
     #social .social{
-        max-width: 100%;
+        width: 762px;
         margin-left: auto;
         margin-right: auto;
-        padding: 200px 0;
-        height: fit-content;
+        padding: 32px 0;
+        height: 200px;
     }
     
     #social .social-heading {
@@ -903,7 +959,6 @@
         font-weight: 500;
         letter-spacing: 12px;
         margin-left: 14px;
-        color: white;
     }
     #social .social-list {
         font-size: 20px;
@@ -920,17 +975,17 @@
     .fa-soundcloud{
         font-size: 40px;
         margin: 30px;
-        color: white;
+        color: black;
     }
     .fa-instagram{
         font-size: 40px;
         margin: 30px;
-        color: white;
+        color: black;
     }
     .fa-youtube{
         font-size: 40px;
         margin: 30px;
-        color: white;
+        color: black;
     }
     .copy{
         float: left;
@@ -941,7 +996,6 @@
         font-weight: 400;
         font-size: 13px;
         text-align: center;
-        color: white;
     }
     .video-content{
         width: 600px;
@@ -949,12 +1003,14 @@
         margin-left: 80px;
     }
     .soundcloud{
-        color: white;
+        text-decoration: none;
+        color: black;
         font-style: italic;
         font-weight: bold;
     }
     .youtube{
-        color: white;
+        text-decoration: none;
+        color: black;
         font-style: italic;
         font-weight: bold;
     }
@@ -1018,19 +1074,24 @@
         font-size: 30px;
     }
     .header-title{
-        padding: 40px;
-        font-family: fantasy;
+        padding: 36px;
+        /* font-family: fantasy; */
         display: inline-block;
-        margin: 20px 63px 20px 63px;
+        margin: 20px 15px 20px 16px;
     }
     .wrapper{
         /* display: block;
         position: absolute; */
-        margin: 0px 30px;
+        /* margin: 0px 30px; */
+        width: 304px;
+        height: 297px;
+        text-align: center;
+        padding: 10px;
     }
     .pic{
-        width: 300px;
-        height: 300px;
+        /* width: 250px; */
+        /* height: 300px; */
+        height: 275px;
     }
     .language{
         position: absolute;
@@ -1219,10 +1280,13 @@
         letter-spacing: 4px;
         font-style: italic;
     }
-    
+    .co-audio{
+        text-align: center;
+        padding: 17px;
+    }
     .audio-content {
-        display: block;
-        margin: 0 80px;
+        /* display: block;
+        margin: 0 80px; */
         width: 200px;
     }
     
@@ -1238,13 +1302,14 @@
     #contact {}
     
     #contact .info {
-        float: left;
-        display: inline-block;
+        /* float: left;
+        display: inline-block; */
+        text-align: center;
     }
     
     #contact .form-email {
-        float: left;
-        display: inline;
+        /* float: left;
+        display: inline; */
     }
     
     #contact .contact-section {
@@ -1272,12 +1337,14 @@
     }
     
     .form-email {
-        margin: 0px 86px;
+        /* margin: 0px 86px; */
         font-size: 5px;
+        text-align: center;
     }
     
     .info {
-        margin: 35px 62px;
+        margin: 15px;
+        padding: 20px;
         line-height: 1.4;
     }
     .info i[class*="ti-"]{
@@ -1311,7 +1378,6 @@
         margin-bottom: 5px;
     } */
     .submit-send{
-        float: right;
         margin-top: 30px;
         font-size: 15px;
         background-color: white;
@@ -1421,9 +1487,11 @@
         color: black;
     }
     #social .social-list {
-        padding: 30px;
+        /* padding: 30px;
         display: inline-flex;
-        margin: 0px 41px;
+        margin: 0px 41px; */
+        text-align: center;
+        padding: 10px;
     }
     #social .social-list a{
         color: rgba(0, 0, 0, 0.6);
@@ -1450,16 +1518,19 @@
     .copy{
     width: 100%;
     height: 100%;
-    padding: 16px;
-    margin-top: -10px;
+    padding: 10px;
     font-weight: 400;
     font-size: 13px;
     text-align: center;
     }
+    .co-video{
+    text-align: center;
+    padding: 22px;
+    }
     .video-content{
         width: 250px;
-        height: 150px;
-        margin: 0 54px;
+        height: 170px;
+        /* margin: 0 54px; */
     }
     .soundcloud{
         text-decoration: none;
