@@ -108,31 +108,19 @@
         <!-- Liên hệ -->
         <div id="contact">
             <div class="contact-section">
-                <h2 class="contact-heading">CONTACT ME</h2>
-                <div class="contact-form">
-                    <div class="input info">
-                        <p><i class="ti-location-pin"></i>Ho Chi Minh City, VN</p>
-                        <p><i class="ti-mobile"></i>+84 908 779 245</p>
-                        <p><i class="ti-email"></i>dinhtankhanh14@gmail.com</p>
-                    </div>
-                            <div class="input form-email">
-                                <div class="input-firstName">
-                                    <input type="text" name="firstName" placeholder="First Name" id="firstName" class="form-control">
-                                </div>
-                                <div class="input-lastName">
-                                    <input type="text" name="lastName" placeholder="Last Name" id="lastName" class="form-control">
-                                </div>
-                                <div class="input-email">
-                                    <input type="email" name="email" placeholder="Email" id="email" class="form-control">
-                                </div>
-                                <div class="input-message">
-                                    <!-- <textarea name="" placeholder="Message" required id="" cols="30" rows="30" class="form-control"></textarea> -->
-                                    <input type="text" name="message" placeholder="Message" id="message" class="form-control">
-                                </div>
+                <h2 class="contact-heading">SUBSCRIBE</h2>
+                <form name="submit-to-google-sheet" class="contact-form">
+                    <div class="input form-email">
+                        <div class="input-email">
+                            <input type="email" name="Email" placeholder="Your Email" required id="email" class="form-control">
+                        </div>
                                 <!-- <input class="submit-send" type="submit" onclick="sendEmail()" required value="SEND"> -->
-                                <button id="btn" class="submit-send" onclick="sendEmail()">SEND</button>
+                                <!-- <button id="btn" class="submit-send" onclick="sendEmail()">SEND</button> -->
+                            <button type="submit" class="submit-send"><i class="fa-solid fa-paper-plane"></i></button>
+                            <span id="msg"></span>
+                            <a class="contactme" href="https://tankhanh.github.io/norsmither/web_branch/contact" target="_blank">Contact me?</a>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
         <div id="social">
@@ -151,14 +139,32 @@
     </div>
 </body>
 <script src="./index.js"></script>
-<script type="text/javascript"
+<!-- <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
 <script type="text/javascript">
    (function(){
       emailjs.init("9CbU7UxqSWDfxFTwo");
    })();
-</script>
+</script> -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyZANNWDq9hPMAKy6w44NHlPRG4GjK-T1qgvXmOR5Bb0YPeX6ZC__PL29Sg6n5NR1XM0g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Thank You For Subcribing!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            }, 3000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
         function Mail(){

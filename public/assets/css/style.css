@@ -248,7 +248,7 @@
         margin-left: auto;
         margin-right: auto;
         padding: 32px 0;
-        height: 625px;
+        height: 500px;
     }
     
     #content .section-product-video {
@@ -304,7 +304,7 @@
         margin-left: auto;
         margin-right: auto;
         padding: 32px 0;
-        height: 800px;
+        height: 300px;
     }
     
     .contact-form {
@@ -327,6 +327,7 @@
         margin: 18px 24px 20px 32px;
         padding: 16px;
         font-size: 15px;
+        transform: translateX(130px);
     }
     
     .info {
@@ -341,42 +342,51 @@
     .form-email .form-control{
         padding: 11px;
         width: 332px;
-        height: 50px;
-        border-top: none;
+        height: 40px;
+        border-style: solid ;
+        /* border-top: none;
         border-left: none;
         border-right: none;
-        border-bottom: ridge;
-        outline: 0;
+        border-bottom: ridge; */
         resize: vertical;
+        border-radius: 14px;
     
     }
     .form-email .form-control:hover{
         background-color: rgba(223, 220, 220, 0.4)
     }
-    .input-name{
-        margin-bottom: 10px;
-    }
-    .input-lastName{
-        margin-bottom: 10px;
-    }
     .input-email{
         margin-bottom: 10px;
     }
-    .input-message{
-        margin-bottom: 10px;
-    }
     .submit-send{
-        float: right;
-        margin-top: 30px;
-        font-size: 15px;
-        background-color: white;
+        background-color: #dbdbdb;
         color: black;
-        padding: 8px 143px;
-        border-radius: 18px;
+        padding: 6px 30px;
+        transform: translate(340px, -50px);
+        border-radius: 14px;
+        border: none;
     }
     .submit-send:hover{
         background-color: black;
         color: white;
+        border: none;
+    }
+    .fa-paper-plane{
+        font-size: 25px;
+    }
+    span{
+        margin-top: -40px;
+        display: block;
+        font-size: 12px ;
+        color: black;
+        font-weight: 900;
+        transform: translateX(10px);
+    }
+    .contactme{
+        color: black;
+        float: right;
+        text-decoration: none;
+        font-weight: 900;
     }
     
     /* NOTIFICATION */
@@ -472,7 +482,7 @@
         padding: 16px;
         font-size: 30px;
         font-weight: 500;
-        letter-spacing: 12px;
+        letter-spacing: 4px;
     }
     #social .social-list {
         font-size: 20px;
@@ -891,27 +901,14 @@
         padding: 11px;
         width: 332px;
         height: 50px;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom: ridge;
         outline: 0;
         resize: vertical;
     
     }
     .form-email .form-control:hover{
-        background-color: rgba(223, 220, 220, 0.4)
-    }
-    .input-name{
-        margin-bottom: 10px;
-    }
-    .input-lastName{
-        margin-bottom: 10px;
+        /* background-color: rgba(223, 220, 220, 0.4) */
     }
     .input-email{
-        margin-bottom: 10px;
-    }
-    .input-message{
         margin-bottom: 10px;
     }
     .submit-send{

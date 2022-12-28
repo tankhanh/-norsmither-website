@@ -43,63 +43,63 @@ const loadPage = document.querySelector(".onload");
 // }, 3000 + 3000);
 // submitSend.addEventListener("click", openNoti);
 // click menu
-function openMenu() {
-  openFormMenu.classList.add("js-open-menu");
-  clickMenu.innerHTML = "";
-}
-clickMenu.addEventListener("click", openMenu);
-//click close
-function closeMenu() {
-  openFormMenu.classList.remove("js-open-menu");
-  clickMenu.innerHTML = "MENU";
-}
-clickClose.addEventListener("click", closeMenu);
-//click Home
-function closeMenuHome() {
-  openFormMenu.classList.remove("js-open-menu");
-  clickMenu.innerHTML = "MENU";
-}
-clickHome.addEventListener("click", closeMenuHome);
-//click Introduce
-function closeMenuIntroduce() {
-  openFormMenu.classList.remove("js-open-menu");
-  clickMenu.innerHTML = "MENU";
-}
-clickIntroduce.addEventListener("click", closeMenuIntroduce);
-//click Home
-function closeMenuHome() {
-  openFormMenu.classList.remove("js-open-menu");
-  clickMenu.innerHTML = "MENU";
-}
-clickHome.addEventListener("click", closeMenuHome);
+// function openMenu() {
+//   openFormMenu.classList.add("js-open-menu");
+//   clickMenu.innerHTML = "";
+// }
+// clickMenu.addEventListener("click", openMenu);
+// //click close
+// function closeMenu() {
+//   openFormMenu.classList.remove("js-open-menu");
+//   clickMenu.innerHTML = "MENU";
+// }
+// clickClose.addEventListener("click", closeMenu);
+// //click Home
+// function closeMenuHome() {
+//   openFormMenu.classList.remove("js-open-menu");
+//   clickMenu.innerHTML = "MENU";
+// }
+// clickHome.addEventListener("click", closeMenuHome);
+// //click Introduce
+// function closeMenuIntroduce() {
+//   openFormMenu.classList.remove("js-open-menu");
+//   clickMenu.innerHTML = "MENU";
+// }
+// clickIntroduce.addEventListener("click", closeMenuIntroduce);
+// //click Home
+// function closeMenuHome() {
+//   openFormMenu.classList.remove("js-open-menu");
+//   clickMenu.innerHTML = "MENU";
+// }
+// clickHome.addEventListener("click", closeMenuHome);
 
-//click Video
-function closeMenuHome() {
-  openFormMenu.classList.remove("js-open-menu");
-  clickMenu.innerHTML = "MENU";
-}
-clickVideo.addEventListener("click", closeMenuHome);
+// //click Video
+// function closeMenuHome() {
+//   openFormMenu.classList.remove("js-open-menu");
+//   clickMenu.innerHTML = "MENU";
+// }
+// clickVideo.addEventListener("click", closeMenuHome);
 
-//click Video
-function closeMenuHome() {
-  openFormMenu.classList.remove("js-open-menu");
-  clickMenu.innerHTML = "MENU";
-}
-clickTrack.addEventListener("click", closeMenuHome);
+// //click Video
+// function closeMenuHome() {
+//   openFormMenu.classList.remove("js-open-menu");
+//   clickMenu.innerHTML = "MENU";
+// }
+// clickTrack.addEventListener("click", closeMenuHome);
 
-//click Contact
-function closeMenuHome() {
-  openFormMenu.classList.remove("js-open-menu");
-  clickMenu.innerHTML = "MENU";
-}
-clickContact.addEventListener("click", closeMenuHome);
+// //click Contact
+// function closeMenuHome() {
+//   openFormMenu.classList.remove("js-open-menu");
+//   clickMenu.innerHTML = "MENU";
+// }
+// clickContact.addEventListener("click", closeMenuHome);
 
-//click Social
-function closeMenuHome() {
-  openFormMenu.classList.remove("js-open-menu");
-  clickMenu.innerHTML = "MENU";
-}
-clickSocial.addEventListener("click", closeMenuHome);
+// //click Social
+// function closeMenuHome() {
+//   openFormMenu.classList.remove("js-open-menu");
+//   clickMenu.innerHTML = "MENU";
+// }
+// clickSocial.addEventListener("click", closeMenuHome);
 
 // function colorMenu() {
 //   const scrolled = window.scrollY;
@@ -112,54 +112,54 @@ clickSocial.addEventListener("click", closeMenuHome);
 // window.addEventListener("scroll", colorMenu);
 
 // ======================================================================================================
-function sendEmail() {
-  var params = {
-    firstName: document.getElementById("firstName").value,
-    lastName: document.getElementById("lastName").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value,
-  };
-  const em =
-    /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-  const firstAndlastName =
-    /^[a-zA-Z_ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s]{1,25}$/;
-  if (
-    params.firstName === "" ||
-    params.lastName === "" ||
-    params.email === "" ||
-    params.message === ""
-    // !na.test(params.firstName) ||
-    // !na.test(params.lastName)
-  ) {
-    alert(
-      "Please fill out the information completely (Vui lòng điền đầy đủ thông tin)"
-    );
-  } else if (!em.test(params.email)) {
-    alert(
-      "Please enter the correct email format (Vui lòng nhập đúng định dạng email)"
-    );
-  } else if (
-    !firstAndlastName.test(params.firstName) ||
-    !firstAndlastName.test(params.lastName)
-  ) {
-    alert(
-      "Only alphabetic characters between 3 and 15 characters in length are allowed (Chỉ cho phép các ký tự chữ cái có độ dài từ 3 đến 15 ký tự)"
-    );
-  } else {
-    const serviceID = "service_hmdstv7";
-    const templateID = "template_fa8mpsd";
-    emailjs
-      .send(serviceID, templateID, params)
-      .then((res) => {
-        (document.getElementById("firstName").value = ""),
-          (document.getElementById("lastName").value = ""),
-          (document.getElementById("email").value = ""),
-          (document.getElementById("message").value = "");
-        console.log(res);
-        alert("Your message sent successfully! (Gửi thành công!)");
-      })
-      .catch((err) => console.log(err));
-  }
-}
+// function sendEmail() {
+//   var params = {
+//     firstName: document.getElementById("firstName").value,
+//     lastName: document.getElementById("lastName").value,
+//     email: document.getElementById("email").value,
+//     message: document.getElementById("message").value,
+//   };
+//   const em =
+//     /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+//   const firstAndlastName =
+//     /^[a-zA-Z_ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s]{1,25}$/;
+//   if (
+//     params.firstName === "" ||
+//     params.lastName === "" ||
+//     params.email === "" ||
+//     params.message === ""
+//     // !na.test(params.firstName) ||
+//     // !na.test(params.lastName)
+//   ) {
+//     alert(
+//       "Please fill out the information completely (Vui lòng điền đầy đủ thông tin)"
+//     );
+//   } else if (!em.test(params.email)) {
+//     alert(
+//       "Please enter the correct email format (Vui lòng nhập đúng định dạng email)"
+//     );
+//   } else if (
+//     !firstAndlastName.test(params.firstName) ||
+//     !firstAndlastName.test(params.lastName)
+//   ) {
+//     alert(
+//       "Only alphabetic characters between 3 and 15 characters in length are allowed (Chỉ cho phép các ký tự chữ cái có độ dài từ 3 đến 15 ký tự)"
+//     );
+//   } else {
+//     const serviceID = "service_hmdstv7";
+//     const templateID = "template_fa8mpsd";
+//     emailjs
+//       .send(serviceID, templateID, params)
+//       .then((res) => {
+//         (document.getElementById("firstName").value = ""),
+//           (document.getElementById("lastName").value = ""),
+//           (document.getElementById("email").value = ""),
+//           (document.getElementById("message").value = "");
+//         console.log(res);
+//         alert("Your message sent successfully! (Gửi thành công!)");
+//       })
+//       .catch((err) => console.log(err));
+//   }
+// }
 
 // =======================================================================================================================
