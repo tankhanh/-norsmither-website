@@ -563,6 +563,20 @@
         font-style: italic;
         font-weight: bold;
     }
+    .visitors-form{
+        position: absolute;
+        text-transform: uppercase;
+        padding: 100px 0;
+    }
+    .time-to-click{
+        font-weight: bolder;
+    }
+    .counter{
+        display: inline-block;
+        transform: translate(0px, 0px);
+        font-size: 17px;
+        color: rgb(255, 0, 0);
+    }
 }
 
 /* =======================================TABLET===================================================== */
