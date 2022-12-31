@@ -45,9 +45,15 @@
                 </div>
             </div>
             <div class="form-menu js-menu">
+                <div class="icon-menu">
+                    <i class="fa-solid fa-bars fa-bars-open"></i>
+                </div>
                 <div class="form-container form-all-close">
                     <div class="form-header">
                         <a href="https://tankhanh.github.io/norsmither/trangchu"><img src="./public/assets/img/signature/signature_grey.png" alt="Trang chủ" class="MENU"></a>
+                    </div>
+                    <div class="icon-menu">
+                        <i class="fa-solid fa-bars fa-bars-close"></i>
                     </div>
                     <div class="form-option">
                         <ul>
@@ -130,6 +136,21 @@
     </div>
 </body>
 <script src="./index.js"></script>
+<script>
+    const open_menu = document.querySelector(".fa-bars-open");
+    const close_menu = document.querySelector(".fa-bars-close");
+    const sideBar = document.querySelector(".form-container");
+
+    function openMenu(){
+        sideBar.classList.add("form-container-open");
+    }
+    open_menu.addEventListener("click", openMenu)
+
+    function closeMenu(){
+        sideBar.classList.remove("form-container-open");
+    }
+    close_menu.addEventListener("click", closeMenu)
+</script>
 <!-- <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
