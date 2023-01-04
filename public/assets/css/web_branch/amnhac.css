@@ -4785,7 +4785,7 @@
         display: block;
         font-size: 8px;
         font-weight: 900;
-        transform: translate(-135px, -222px);
+        transform: translate(-135px, -190px);
         border-radius: 7px;
         width: max-content;
         height: max-content;
@@ -4889,7 +4889,7 @@
         display: block;
         font-size: 8px;
         font-weight: 900;
-        transform: translate(35px, -222px);
+        transform: translate(35px, -190px);
         border-radius: 7px;
         width: max-content;
         height: max-content;
@@ -4906,11 +4906,11 @@
         display: block;
         font-size: 8px;
         font-weight: 900;
-        transform: translate(-85px, -75px);
+        transform: translate(-85px, -40px);
         border-radius: 7px;
         width: max-content;
         height: max-content;
-        color: black;
+        color: black
     }
     .watch-3:hover{
         color: rgb(40, 40, 40);
@@ -4922,7 +4922,7 @@
         display: block;
         font-size: 8px;
         font-weight: 900;
-        transform: translate(30px, -75px);
+        transform: translate(30px, -40px);
         border-radius: 7px;
         width: max-content;
         height: max-content;
@@ -4991,7 +4991,7 @@
         border-radius: 7px;
         width: max-content;
         height: max-content;
-        color: black
+        color:black;
     }
     .watch-8:hover{
         color: rgb(40, 40, 40);
