@@ -2494,12 +2494,10 @@
         font-size: 30px;
     }
     .header-title{
-        text-align: left;
         font-weight: 900;
         /* padding: 30px; */
         /* font-family: cursive; */
         animation: menuFaceIn ease .9s;
-        margin: 0 36px;
     }
     .wrapper{
         /* padding: 10px;
