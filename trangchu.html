@@ -40,20 +40,23 @@
                 <div class="header-title">
                     <a href="https://tankhanh.github.io/norsmither/trangchu" class="name-title">NORSMITHER</a>
                 </div>
+                <div class="icon-menu">
+                    <i class="fa-solid fa-bars fa-bars-open"></i>
+                </div>
                 <div class="form-container form-all-close">
                     <div class="icon-menu">
-                        <i class="fa-solid fa-bars fa-bars-close"></i>
+                        <i class="fa-solid fa-xmark fa-bars-close"></i>
                     </div>
                     <div class="form-option">
                         <ul>
                             <li class="introduce js-introduce"><a href="https://tankhanh.github.io/norsmither/web_branch/gioithieu">Giới thiệu</a></li>
-                            <li class="product js-video"><a href="https://tankhanh.github.io/norsmither/web_branch/amnhac">Music + Video</a></li>
+                            <li class="product js-video"><a href="https://tankhanh.github.io/norsmither/web_branch/amnhac">Music + Videos</a></li>
                             <li class="contact js-contact"><a href="https://tankhanh.github.io/norsmither/web_branch/lienhe">Liên hệ</a></li>
                                 <div class="all_language">
                                     <li class="language js-language"><a href="#">Ngôn ngữ</a></li>
                                     <div class="language-content">
-                                        <li class="ENG"><a href="https://tankhanh.github.io/norsmither/home">Tiếng anh</a></li>
-                                        <li class="VN"><a href="https://tankhanh.github.io/norsmither/trangchu">Tiếng việt</a></li>
+                                        <li class="ENG"><a href="https://tankhanh.github.io/norsmither/home">ENG</a></li>
+                                        <li class="VN"><a href="https://tankhanh.github.io/norsmither/trangchu">VN</a></li>
                                     </div>
                                 </div>
                         </ul>
@@ -169,11 +172,13 @@
 
     function openMenu(){
         sideBar.classList.add("form-container-open");
+        open_menu.style.visibility = 'hidden'
     }
     open_menu.addEventListener("click", openMenu)
 
     function closeMenu(){
         sideBar.classList.remove("form-container-open");
+        open_menu.style.visibility = 'visible'
     }
     close_menu.addEventListener("click", closeMenu)
 </script>

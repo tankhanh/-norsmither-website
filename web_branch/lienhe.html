@@ -18,19 +18,22 @@
         <div id="header">
             <div class="header-section">
                 <div class="header-title">
-                    <a href="https://tankhanh.github.io/norsmither/home" class="name-title">NORSMITHER</a>
+                    <a href="https://tankhanh.github.io/norsmither/trangchu" class="name-title">NORSMITHER</a>
+                </div>
+                <div class="icon-menu">
+                    <i class="fa-solid fa-bars fa-bars-open"></i>
                 </div>
                 <div class="form-container form-all-close">
                     <div class="icon-menu">
-                        <i class="fa-solid fa-bars fa-bars-close"></i>
+                        <i class="fa-solid fa-xmark fa-bars-close"></i>
                     </div>
                     <div class="form-option">
                         <ul>
-                            <li class="introduce js-introduce"><a href="https://tankhanh.github.io/norsmither/web_branch/info">About me</a></li>
+                            <li class="introduce js-introduce"><a href="https://tankhanh.github.io/norsmither/web_branch/info">Giới thiệu</a></li>
                             <li class="product js-video"><a href="https://tankhanh.github.io/norsmither/web_branch/music">Music + Videos</a></li>
-                            <li class="contact js-contact"><a href="https://tankhanh.github.io/norsmither/web_branch/contact">Contact</a></li>
+                            <li class="contact js-contact"><a href="https://tankhanh.github.io/norsmither/web_branch/contact">Liên hệ</a></li>
                                 <div class="all_language">
-                                    <li class="language js-language"><a href="#">language</a></li>
+                                    <li class="language js-language"><a href="#">Ngôn ngữ</a></li>
                                     <div class="language-content">
                                         <li class="ENG"><a href="https://tankhanh.github.io/norsmither/home">ENG</a></li>
                                         <li class="VN"><a href="https://tankhanh.github.io/norsmither/trangchu">VN</a></li>
@@ -100,7 +103,7 @@
                     <a href="https://soundcloud.com/norsmither" rel="noopener" target="_blank"><i class="fa-brands fa-soundcloud follow_soundcloud"></i></a>
                 </div>
                 <p class="copy">Copyright © 2023 Norsmither - All Rights Reserved.
-                    <br>*Contact me if there is a copyright issue: <a style="color: #FFFFFF;" href="mailto:dinhtankhanh14@gmail.com">dinhtankhanh14@gmail.com</a>*
+                    <br>*Liên hệ với chúng tôi nếu gặp vấn đề về bản quyền: <a style="color: #FFFFFF;" href="mailto:dinhtankhanh14@gmail.com">dinhtankhanh14@gmail.com</a>*
                 </p>             
             </div>        
         </div>
@@ -114,11 +117,13 @@
 
     function openMenu(){
         sideBar.classList.add("form-container-open");
+        open_menu.style.visibility = 'hidden'
     }
     open_menu.addEventListener("click", openMenu)
 
     function closeMenu(){
         sideBar.classList.remove("form-container-open");
+        open_menu.style.visibility = 'visible'
     }
     close_menu.addEventListener("click", closeMenu)
 </script>
