@@ -235,7 +235,7 @@
     /* CONTENT-SECTION */
     .image-heading{
         width: 300px;
-        height: 400px;
+        height: 90%;
     }
     #content .content-section {
         width: 762px;
@@ -266,7 +266,7 @@
         text-align: justify;
         font-size: 15px;
         line-height: 2;
-        margin: 25px 70px;
+        margin: -50px 70px;
         font-style: italic;
         position: relative;
         left: 160px;
